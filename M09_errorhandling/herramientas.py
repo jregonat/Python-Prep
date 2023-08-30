@@ -19,10 +19,10 @@ class Herramientas:
         parametros_esperados = ['celsius','kelvin','farenheit']
         lista_conversion = []
         if str(origen) not in parametros_esperados:
-            print('Los parametros esperados son:', parametros_esperados)
+            print('Los parametros esperados de origen son:', parametros_esperados)
             return lista_conversion
         if str(destino) not in parametros_esperados:
-            print('Los parametros esperados son:', parametros_esperados)
+            print('Los parametros esperados de destino son:', parametros_esperados)
             return lista_conversion
         for i in self.lista:
             lista_conversion.append(self.__conversion_grados(i, origen, destino))
